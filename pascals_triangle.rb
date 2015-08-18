@@ -8,7 +8,7 @@ class PascalsTriangle
 
   attr_accessor :triangle, :parser, :limit
 
-  def initialize(parser = DigitsOutput, output_char = nil)
+  def initialize(parser = DigitsOutput)
     self.triangle = []
     self.parser = DisplayParser.new(parser, @triangle)
   end
